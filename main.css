@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url('leaguespartan-bold.eot');
+    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+         url('leaguespartan-bold.woff2') format('woff2'),
+         url('leaguespartan-bold.woff') format('woff'),
+         url('leaguespartan-bold.ttf') format('truetype'),
+         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('arimo-bold-webfont.eot');
+    src: url('arimo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arimo-bold-webfont.woff2') format('woff2'),
+         url('arimo-bold-webfont.woff') format('woff'),
+         url('arimo-bold-webfont.ttf') format('truetype'),
+         url('arimo-bold-webfont.svg#arimobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('arimo-bolditalic-webfont.eot');
+    src: url('arimo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arimo-bolditalic-webfont.woff2') format('woff2'),
+         url('arimo-bolditalic-webfont.woff') format('woff'),
+         url('arimo-bolditalic-webfont.ttf') format('truetype'),
+         url('arimo-bolditalic-webfont.svg#arimobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('arimo-italic-webfont.eot');
+    src: url('arimo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arimo-italic-webfont.woff2') format('woff2'),
+         url('arimo-italic-webfont.woff') format('woff'),
+         url('arimo-italic-webfont.ttf') format('truetype'),
+         url('arimo-italic-webfont.svg#arimoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Arimo';
+    src: url('arimo-regular-webfont.eot');
+    src: url('arimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('arimo-regular-webfont.woff2') format('woff2'),
+         url('arimo-regular-webfont.woff') format('woff'),
+         url('arimo-regular-webfont.ttf') format('truetype'),
+         url('arimo-regular-webfont.svg#arimoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	font-size: 14px;
+	background: #000;
+	color: #CCF;
+
+}
+
+hr {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#main{
+background: #02080D;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+h3 {
+	font-size:20pt;
+}
+
+h4 {
+	font-size: 16pt;
+}
+
+a {
+	font-size: 14px;
+	color: #AAF;
+	text-decoration: none;
+	
+}
+a:hover {
+	color:#99C;
+	text-shadow: 0 0px 10px #666;
+}
+
+#nameheader{
+	font-size: 40px;
+	font-weight: normal;
+}
+
+#subheader {
+	font-size: 14px;
+	line-height: normal;
+}
+
+h3, h4, #nameheader {
+	font-family: 'League Spartan', Arial, sans-serif;
+	font-weight: normal;
+	font-variant: normal;
+}
+
+a, body  {
+font-family: Arimo, Arial, sans-serif;
+}
+
+div.pubtitle {
+	position: relative;
+	font-size: 12px;
+	margin-top: 10px;
+	/*font-weight: bold;*/
+	line-height:normal;
+	margin-left: 10px;
+}
+
+
+
+div.pubtitle a span {
+	display: none;
+}
+
+div.pubtitle a:hover span {
+	display: block;
+	/*position: absolute; top: 80px; left: 500px; width: 250px;*/
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	max-width: 800px;
+	padding: 6px;
+	margin: 5px;
+	z-index: 100;
+	background:  #12181D;
+	line-height: normal;
+	border: 1px solid #CCF;
+	text-shadow: none;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+div.pubtitle a .sub {
+	vertical-align: sub;
+	display: inline;
+}
+
+div.pubtitle a span img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.pubcite, .pubcite a {
+	font-size: 12px;
+
+}
+
+.pubcite{
+	margin-left: 30px;
+	line-height: normal;
+}
+
+div.softwarelist {
+	position: relative;
+	line-height: normal;
+	margin-bottom: 4px;
+}
+
+
+div.softwarelist ul {
+	list-style-type:none;
+}
+div.softwarelist ul li{
+	font-size:12px;
+	margin: 0;
+	line-height: normal;
+	display:inline-block;
+}
+
+div.softwarelist ul li:not(:last-child):after{
+	content: "/";
+	margin: 0 2px;
+}	
+
+div.softwarelist 	{
+	font-size:14px;
+	
+}
+
+div.softwarelist a span {
+	display: none;
+}
+
+div.softwarelist a:hover span {
+	display: block;
+	/*position: absolute; top: 80px; left: 500px; width: 250px;*/
+	position: absolute;
+	top: 12px;
+	left: 80px;
+	max-width: 380px;
+	padding: 5px;
+	margin: 10px;
+	z-index: 100;
+	color: #222;
+	background: #CCF;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.software_header {
+	margin-bottom: 5px;
+}
+
+ul.listone {
+	list-style-type: square;
+	text-indent: -10px;
+	padding-left: 10px;
+}
+
+ul.listone li {
+	margin-left: 10px;
+	line-height: normal;
+}
+
+
+
+
+.nobottom{
+	margin-bottom: 0;
+}
+
+#mainlink{
+	font-size: 14px;
+	line-height:normal;
+}
+
