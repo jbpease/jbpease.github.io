@@ -193,7 +193,7 @@ div.softwarelist ul li{
 }
 
 div.softwarelist ul li:not(:last-child):after{
-	content: "/";
+	content: "";
 	margin: 0 2px;
 }	
 
