@@ -17,16 +17,34 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/colordark.css" />
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+        <script type="text/javascript">
+          function changeCSS() {
+              var oldlink = document.getElementsByTagName("link").item(3);
+              var newlink = "css/colordark.css";
+              if (oldlink.getAttribute("href") === "css/colordark.css") {
+                  newlink = "css/colorlight.css";
+              }
+              oldlink.setAttribute("rel", "stylesheet");
+              oldlink.setAttribute("type", "text/css");
+              oldlink.setAttribute("href", newlink);
+              document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+              }
+    </script>
   </head>
   <body>
     <!-- Primary Page Layout
         ================================================== -->
     <div class="container" id="main">
       <div class="row">
-        <div id="nameheader" class="twelve columns">James Pease</div>
+        <div id="nameheader" class="eleven columns">James Pease</div>
+        <div id="lightswitch" class="one columns">  
+           <a href="#" onclick="changeCSS();" class="heyding">l</a>
+        </div>
       </div>
       <div id="header" class="row">
         <div class="four columns">
@@ -64,7 +82,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
                 <a href="http://www.github.com/jbpease/dfoil" target="_blank">DFOIL 
                 <span>Detection of introgression in five-taxon phylogeny</span></a>
               </li>
-              <li>
+                <li>
                 <a href="http://www.github.com/jbpease/mixtape" target="_blank">mixTAPE 
                 <span>mix of Tools for Analysis of Phylogenetics and Evolution</span></a>
               </li>
@@ -105,7 +123,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             both genome-wide and in windows of the genome. In addition, we explore both the principles and problems of
             introgression detection in even more complex phylogenies.</span></a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong>, Hahn MW. 2015. 
+          <div class="indented pubcite"><strong>Pease JB</strong> &amp; MW Hahn. 2015. 
           <em>Systematic Biology.</em> 64 (4): 651&ndash;662.
           <br />doi: 
           <a href="http://dx.doi.org/10.1093/sysbio/syv023"
@@ -124,7 +142,8 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             has not crossed species boundaries. Our results suggest that traits enhancing vectorial capacity may be gained through
             interspecific gene flow, including between nonsister species.</span></a>
           </div>
-          <div class="indented pubcite">Fontaine, MC*, <strong>Pease JB*</strong>, et al. 2015. 
+          <div class="indented pubcite">Fontaine, MC*, <strong>JB Pease*</strong>, A Steele, RM Waterhouse, DE Neafsey, IV Sharakhov, X Jiang,
+                      AB Hall, F Catteruccia, E Kakani, SN Mitchell, Y Wu, HA Smith, RR Love, MK Lawniczak, MA Slotman, SJ Emrich, MW Hahn, NJ Besansky. 2015. 
           <em>Science</em> 347 (6217), 1258524.
           <br />doi: 
           <a href="http://dx.doi.org/10.1126/science.1258524" class="doilink">10.1126/science.1258524</a> &middot; PMID: 
@@ -151,7 +170,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             of climatic niche adaptation in wild tomatoes and demonstrates that some trait transitions between species could have
             involved few, large-effect genetic changes, allowing rapid responses to new environmental conditions.</span></a>
           </div>
-          <div class="indented pubcite">Muir CD, <strong>Pease JB</strong>, Moyle LC. 2014. 
+          <div class="indented pubcite">Muir CD, <strong>JB Pease</strong>, LC Moyle. 2014. 
           <em>Genetics</em> 198:1629&ndash;43.
           <br />doi: 
           <a href="http://dx.doi.org/10.1534/genetics.114.169276" class="doilink">10.1534/genetics.114.169276</a> &middot; PMID: 
@@ -176,7 +195,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             species phylogeny, especially in cases where a whole-genome phylogeny appears to be an unresolvable
             polytomy.</span></a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong>, Hahn MW. 2013. 
+          <div class="indented pubcite"><strong>Pease JB</strong>&amp; MW Hahn. 2013. 
           <em>Evolution</em> 67:2376&ndash;84.
           <br />doi: 
           <a href="http://dx.doi.org/10.1111/evo.12118" class="doilink">10.1111/evo.12118</a> &middot; PMID: 
@@ -205,7 +224,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             X—differ among the insect X and Z chromosomes. Our results provide evidence for both differences and nearly universal
             similarities in patterns of evolution among independently derived sex chromosomes.</span></a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong>, Hahn MW. 2012. 
+          <div class="indented pubcite"><strong>Pease JB</strong> &amp; MW Hahn. 2012. 
           <em>Molecular Biology &amp; Evolution</em> 29: 1645&ndash;53.
           <br />doi: 
           <a href="http://dx.doi.org/10.1093/molbev/mss010" class="doilink">10.1093/molbev/mss010</a> &middot; PMID: 
@@ -226,7 +245,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             further work is needed to distinguish among these hypotheses. Regardless of the root causes, we have identified an
             additional, potentially inherent, difference between XX/XY and ZZ/ZW systems.</span></a>
           </div>
-          <div class="indented pubcite">Toups MA, <strong>Pease JB</strong>, Hahn MW. 2011. 
+          <div class="indented pubcite">Toups MA, <strong>JB Pease</strong>, MW Hahn. 2011. 
           <em>Genome Biology &amp; Evolution</em> 3:1381&ndash;90.
           <br />doi: 
           <a href="http://dx.doi.org/10.1093/gbe/evr109" class="doilink">10.1093/gbe/evr109</a> &middot; PMID: 
@@ -245,7 +264,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             may prove useful for bridging evolutionary biology and biomedicine, especially the evolution of antibiotic resistance
             in bacteria, immune evasion by influenza, and malaria parasite infections.</span></a>
           </div>
-          <div class="indented pubcite">Ogbunugafor CB, <strong>Pease JB</strong>, Turner PE. 2010. 
+          <div class="indented pubcite">Ogbunugafor CB, <strong>JB Pease</strong>, PE Turner. 2010. 
           <em>Chaos.</em> 20(2):026108.
           <br />doi: 
           <a href="http://dx.doi.org/10.1063/1.3455189" class="doilink">10.1063/1.3455189</a> &middot; PMID: 
