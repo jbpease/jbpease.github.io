@@ -120,7 +120,7 @@ h3, h4, #nameheader {
 }
 
 a, body  {
-font-family: Arimo, Arial, sans-serif;
+font-family: /*Arimo,*/ Arial, sans-serif;
 }
 
 div.pubtitle {
@@ -129,9 +129,8 @@ div.pubtitle {
 	margin-top: 10px;
 	/*font-weight: bold;*/
 	line-height:normal;
-	margin-left: 10px;
+	margin-left: 0px;
 }
-
 
 
 div.pubtitle a span {
@@ -143,7 +142,7 @@ div.pubtitle a:hover span {
 	/*position: absolute; top: 80px; left: 500px; width: 250px;*/
 	position: absolute;
 	top: 50px;
-	left: 10px;
+	left: 0px;
 	max-width: 800px;
 	padding: 6px;
 	margin: 5px;
@@ -172,7 +171,7 @@ div.pubtitle a span img {
 }
 
 .pubcite{
-	margin-left: 30px;
+	margin-left: 14px;
 	line-height: normal;
 }
 
@@ -194,7 +193,7 @@ div.softwarelist ul li{
 }
 
 div.softwarelist ul li:not(:last-child):after{
-	content: "";
+	content: ".";
 	margin: 0 2px;
 }	
 
@@ -226,14 +225,14 @@ div.softwarelist a:hover span {
 }
 
 ul.listone {
-	list-style-type: square;
-	text-indent: -10px;
-	padding-left: 10px;
+	list-style-type: none;
+	text-indent: -5px;
+	padding-left: 5px;
 }
 
 ul.listone li {
-	margin-left: 10px;
-	line-height: normal;
+	margin-left: 5px;
+	line-height: 12px;
 }
 
 .nobottom{
