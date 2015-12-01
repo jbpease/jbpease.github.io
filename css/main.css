@@ -1,81 +1,6 @@
-@font-face {
-    font-family: 'League Spartan';
-    src: url('leaguespartan-bold.eot');
-    src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-         url('leaguespartan-bold.woff2') format('woff2'),
-         url('leaguespartan-bold.woff') format('woff'),
-         url('leaguespartan-bold.ttf') format('truetype'),
-         url('leaguespartan-bold.svg#league_spartanbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-	}
-
-@font-face {
-    font-family: 'Arimo';
-    src: url('arimo-bold-webfont.eot');
-    src: url('arimo-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('arimo-bold-webfont.woff2') format('woff2'),
-         url('arimo-bold-webfont.woff') format('woff'),
-         url('arimo-bold-webfont.ttf') format('truetype'),
-         url('arimo-bold-webfont.svg#arimobold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Arimo';
-    src: url('arimo-bolditalic-webfont.eot');
-    src: url('arimo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('arimo-bolditalic-webfont.woff2') format('woff2'),
-         url('arimo-bolditalic-webfont.woff') format('woff'),
-         url('arimo-bolditalic-webfont.ttf') format('truetype'),
-         url('arimo-bolditalic-webfont.svg#arimobold_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Arimo';
-    src: url('arimo-italic-webfont.eot');
-    src: url('arimo-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('arimo-italic-webfont.woff2') format('woff2'),
-         url('arimo-italic-webfont.woff') format('woff'),
-         url('arimo-italic-webfont.ttf') format('truetype'),
-         url('arimo-italic-webfont.svg#arimoitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Arimo';
-    src: url('arimo-regular-webfont.eot');
-    src: url('arimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('arimo-regular-webfont.woff2') format('woff2'),
-         url('arimo-regular-webfont.woff') format('woff'),
-         url('arimo-regular-webfont.ttf') format('truetype'),
-         url('arimo-regular-webfont.svg#arimoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Heydings';
-    src: url('heydings_icons-webfont.eot');
-    src: url('heydings_icons-webfont.eot?#iefix') format('embedded-opentype'),
-         url('heydings_icons-webfont.woff2') format('woff2'),
-         url('heydings_icons-webfont.woff') format('woff'),
-         url('heydings_icons-webfont.ttf') format('truetype'),
-         url('heydings_icons-webfont.svg#heydings_iconsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 body {
+	background: #162955;
+    color: #111;
 	font-size: 14px;
 }
 
@@ -85,26 +10,33 @@ hr {
 }
 
 #main{
-padding-left: 20px;
-padding-right: 20px;
+    background: #7887AB;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 h3 {
-	font-size:20pt;
+	font-size: 24pt;
 }
 
 h4 {
-	font-size: 16pt;
+	font-size: 18pt;
 }
 
 a {
 	font-size: 14px;
+    color: #061539;
 	text-decoration: none;
-	
 }
 
+a:hover {
+	color: #08173B;
+	text-shadow: 0 0px 10px #666;
+}
+
+
 #nameheader{
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: normal;
 }
 
@@ -120,7 +52,7 @@ h3, h4, #nameheader {
 }
 
 a, body  {
-font-family: /*Arimo,*/ Arial, sans-serif;
+font-family: 'Open Sans', Arial, sans-serif;
 }
 
 div.pubtitle {
@@ -151,6 +83,8 @@ div.pubtitle a:hover span {
 	text-shadow: none;
 	font-size: 12px;
 	font-weight: normal;
+	background:  #12181D;
+	border: 1px solid #CCF;
 }
 
 div.pubtitle a .sub {
@@ -208,6 +142,8 @@ div.softwarelist a span {
 
 div.softwarelist a:hover span {
 	display: block;
+    color: #222;
+	background: #CCF;
 	/*position: absolute; top: 80px; left: 500px; width: 250px;*/
 	position: absolute;
 	top: 12px;
@@ -239,12 +175,68 @@ ul.listone li {
 	margin-bottom: 0;
 }
 
-#mainlink{
+.mainlink{
 	font-size: 14px;
 	line-height:normal;
 }
 
-.heyding{
-	font-family: 'Heydings';
-	font-size: 30px;
+
+label {
+  display: block;
+  height: 25px;
+  width: 100px;
+  text-align: center;
+  margin: 20px 0;
+  position: fixed;
+  right: 0;
+  font-family: 'Heydings';
+  font-size: 30px;
+  font-weight:normal;
+  color: #eee;
 }
+ 
+label:hover {
+  text-shadow: yellow 1px 1px 10px;
+  color: #eee;
+  cursor: pointer;
+}
+ 
+input#lightswitch {
+   position: absolute;
+   top: -9999px;
+  left: -9999px;
+}
+
+input#lightswitch:checked + #main {
+    background: #061539;
+	color: #99f;
+}
+
+input#lightswitch:checked + #main a {
+	color: #88e;
+}
+
+input#lightswitch:checked + #main a:hover {
+	color:#99C;
+	text-shadow: 0 0px 10px #666;
+}
+
+input#lightswitch:checked {
+}
+
+.toggle {
+  height: 100px;
+  width: 100px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 50;
+}
+
+
+
+
+
+
