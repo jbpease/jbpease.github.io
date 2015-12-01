@@ -83,8 +83,8 @@ div.pubtitle a:hover span {
 	text-shadow: none;
 	font-size: 12px;
 	font-weight: normal;
-	background:  #12181D;
-	border: 1px solid #CCF;
+    background: #7887AB;
+	border: 1px solid #222;
 }
 
 div.pubtitle a .sub {
@@ -235,8 +235,10 @@ input#lightswitch:checked {
   opacity: 50;
 }
 
-
-
+input#lightswitch:checked + #main div.pubtitle a:hover span {
+    background: #061539;  
+    border: solid 1px #99f;
+}
 
 
 
