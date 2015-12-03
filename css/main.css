@@ -1,6 +1,6 @@
 body {
-	background: #162955;
-    color: #111;
+	background: #061539;
+    color: #0C0C0C;
 	font-size: 14px;
 }
 
@@ -9,7 +9,11 @@ hr {
 	margin-bottom: 10px;
 }
 
-#main{
+p {
+    line-height: normal;
+}
+
+#main {
     background: #7887AB;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -100,7 +104,7 @@ div.pubtitle a span img {
 }
 
 .pubcite, .pubcite a {
-	font-size: 12px;
+	font-size: 13px;
 
 }
 
@@ -127,7 +131,7 @@ div.softwarelist ul li{
 }
 
 div.softwarelist ul li:not(:last-child):after{
-	content: ".";
+	content: "|";
 	margin: 0 2px;
 }	
 
@@ -208,12 +212,12 @@ input#lightswitch {
 }
 
 input#lightswitch:checked + #main {
-    background: #061539;
-	color: #99f;
+    background: #00001E; 
+    color: #99f;
 }
 
 input#lightswitch:checked + #main a {
-	color: #88e;
+	color: #ccc;
 }
 
 input#lightswitch:checked + #main a:hover {
