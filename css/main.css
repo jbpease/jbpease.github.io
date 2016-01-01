@@ -63,7 +63,7 @@ div.pubtitle {
 	position: relative;
 	font-size: 12px;
 	margin-top: 10px;
-	/*font-weight: bold;*/
+    font-weight: bold;
 	line-height:normal;
 	margin-left: 0px;
 }
