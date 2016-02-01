@@ -113,6 +113,15 @@ div.pubtitle a span img {
 	line-height: normal;
 }
 
+ul.news {
+    list-style-type: square;
+}
+
+ul.news li {
+    padding-left: 20px ;
+    text-indent: -16px;
+}
+
 div.softwarelist {
 	position: relative;
 	line-height: normal;
