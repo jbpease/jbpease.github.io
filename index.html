@@ -55,7 +55,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
           </div>
 		  <div class="mainlink two columns">
           <a href="http://scholar.google.com/citations?user=VzP548QAAAAJ">G.Scholar</a> <br />
-          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?%20term=Pease+JB%5BAuthor%5D">PubMed</a> <br />
+          <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Pease+JB%5BAuthor%5D">PubMed</a> <br />
           <a href="http://www.github.com/jbpease/">GitHub</a>
           <br />
 
@@ -68,7 +68,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             <ul class="news">
                 <li> 2016-Feb-01: I will be teaching at the EMBO Computation Molecular Evolution Course in Crete this May.  Check <a href="http://events.embo.org/16-computational-evolution/">http://events.embo.org/16-computational-evolution/</a> for details.</li>
             </ul>
-        
+         
             <h3>Research</h3>
             <p>My research focuses on using multi-genome datasets to investigate the evolutionary histories of clades,
                especially processes of introgression, selection, molecular adaptation, and environmental effects that 
@@ -76,26 +76,39 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             </p>
           
           <h3>Publications</h3>
+              <div class="pubtitle">
+                 <a href="#">Powerful methods for detecting introgressed regions from population genomic data.
+                     <span>Abstract coming soon...</span>
+                 </a>
+              </div>
+          <div class="indented pubcite">Rosenzweig BK, <strong>Pease JB</strong>, Besansky NJ, Hahn MW. (In Press).
+          <em>Molecular Ecology</em>.
+          <br /><!--doi: 
+          <a href="http://dx.doi.org/10.1371/journal.pbio.1002379"
+             class="doilink">10.1371/journal.pbio.1002379</a> &middot; 
+         PMID:
+         <a class="doilink" href="http://www.ncbi.nlm.nih.gov/pubmed?term=26871574%5Buid%5D">26871574</a>
+         &middot; Software: <a href="http://www.github.com/jbpease/mvftools/" target="blank">MVFtools</a>, <a href="http://www.github.com/jbpease/dfoil/" target="blank">dfoil</a>--></div>
          <div class="pubtitle">
-            <a href="http://dx.doi.org/10.1371/journal.pbio.1002379">
+             <a href="http://dx.doi.org/10.1371/journal.pbio.1002379">
                Phylogenomics reveals three sources of adaptive variation during a rapid radiation. 
                <span>Speciation events often occur in rapid bursts of diversification, but the ecological and genetic factors that promote these radiations are still much debated. Using whole transcriptomes from all 13 species in the ecologically and reproductively diverse wild tomato clade (<em>Solanum</em> sect. <em>Lycopersicon</em>), we infer the species phylogeny and patterns of genetic diversity in this group. Despite widespread phylogenetic discordance due to the sorting of ancestral variation, we date the origin of this radiation to approximately 2.5 million years ago and find evidence for at least three sources of adaptive genetic variation that fuel diversification. First, we detect introgression both historically between early-branching lineages and recently between individual populations, at specific loci whose functions indicate likely adaptive benefits. Second, we find evidence of lineage-specific <em>de novo</em> evolution for many genes, including loci involved in the production of red fruit color. Finally, using a &ldquo;PhyloGWAS&rdquo; approach, we detect environment-specific sorting of ancestral variation among populations that come from different species but share common environmental conditions. Estimated across the whole clade, small but substantial and approximately equal fractions of the euchromatic portion of the genome are inferred to contribute to each of these three sources of adaptive genetic variation. These results indicate that multiple genetic sources can promote rapid diversification and speciation in response to new ecological opportunity, in agreement with our emerging phylogenomic understanding of the complexity of both ancient and recent species radiations.</span>
             </a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong>, DC Haak, MW Hahn, &amp; LC Moyle. (In Press). 
-          <em>PLoS Biology</em>
+          <div class="indented pubcite"><strong>Pease JB</strong>, Haak DC, Hahn MW, Moyle LC. 2016.
+          <em>PLoS Biology</em> 14(2): e1002379.
           <br />doi: 
           <a href="http://dx.doi.org/10.1371/journal.pbio.1002379"
              class="doilink">10.1371/journal.pbio.1002379</a> &middot; 
          PMID:
          <a class="doilink" href="http://www.ncbi.nlm.nih.gov/pubmed?term=26871574%5Buid%5D">26871574</a>
-         &middot; Software: <a href="http://www.github.com/jbpease/mvftools/" target="blank">MVFtools</a></div>
+         &middot; Software: <a href="http://www.github.com/jbpease/mvftools/" target="blank">MVFtools</a>, <a href="http://www.github.com/jbpease/dfoil/" target="blank">dfoil</a></div>
           <div class="pubtitle">
-            <a href="http://doi.ieeecomputersociety.org/10.1109/tcbb.2015.2509997">
+            <a href="http://dx.doi.org/10.1109/tcbb.2015.2509997">
     Encoding data using biological principles: the Multisample Variant Format for phylogenomics and population genomics
     <span>Rapid progress in the fields of phylogenomics and population genomics has driven increases in both the size of multi-genomic datasets and the number and complexity of genome-wide analyses. We present the Multisample Variant Format, specifically designed to store multiple sequence alignments for phylogenomics and population genomic analysis. The signature feature of MVF is a distinctive encoding of aligned sites with specific biological information content (e.g., invariant, low-coverage). This biological pattern-based encoding allows for rapid filtering and quality control of data and speeds up computation for many analyses. MVF has a simple data structure and flexible header structure to accommodate project metadata, making it an effective data publication and sharing format as well. We also propose variants of the MVF format to accommodate protein and codon alignments, quality scores, and a mix of <em>de novo</em> and reference-aligned data. Using the MVFtools package, MVF files can be converted from other common sequence formats. MVFtools completes tasks ranging from simple transformation and filtering operations to complex genome-wide visualizations in only a few minutes, even on large datasets. In addition to presentation of MVF and MVFtools, we also discuss the application both in MVF and other existing data formats of the broader concept of using biological principles and patterns to inform sequence data encoding.</span></a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong> &amp; BK Rosenzweig. (In Press). 
+          <div class="indented pubcite"><strong>Pease JB</strong>, Rosenzweig BK. (In Press). 
           <em>IEEE/ACM Transactions on Computational Biology and Bioinformatics</em>. 
           <br />doi: 
           <a href="http://dx.doi.org/10.1109/tcbb.2015.2509997"
@@ -125,13 +138,11 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             both genome-wide and in windows of the genome. In addition, we explore both the principles and problems of
             introgression detection in even more complex phylogenies.</span></a>
           </div>          
-           <div class="indented pubcite"><strong>Pease JB</strong> &amp; MW Hahn. 2015. 
-                         <em>Systematic Biology</em> 64 (4): 651&ndash;662.
-                                   <br />doi: 
-                                             <a href="http://dx.doi.org/10.1093/sysbio/syv023"
-                                                          class="doilink">10.1093/sysbio/syv023</a> &middot; PMID:
-                                                                <a class="doilink" href="http://www.ncbi.nlm.nih.gov/pubmed?term=25888025%5Buid%5D">25888025</a>
-                                                                          &middot; Software: <a href="http://www.github.com/jbpease/dfoil/" target="blank">dfoil</a></div>
+           <div class="indented pubcite"><strong>Pease JB</strong>, Hahn MW. 2015. 
+             <em>Systematic Biology</em> 64 (4): 651&ndash;662.<br />
+             doi: <a href="http://dx.doi.org/10.1093/sysbio/syv023" class="doilink">10.1093/sysbio/syv023</a> 
+             &middot; PMID: <a class="doilink" href="http://www.ncbi.nlm.nih.gov/pubmed?term=25888025%5Buid%5D">25888025</a>
+             &middot; Software: <a href="http://www.github.com/jbpease/dfoil/" target="blank">dfoil</a></div>
           <div class="pubtitle">
             <a href="http://dx.doi.org/10.1126/science.1258524">Extensive introgression in a malaria vector species complex
             revealed by phylogenomics. 
@@ -144,8 +155,8 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             introgression between these malaria vectors means that only a small fraction of the genome, mainly on the X chromosome,
             has not crossed species boundaries. Our results suggest that traits enhancing vectorial capacity may be gained through
             interspecific gene flow, including between nonsister species.</span></a></div>
-          <div class="indented pubcite">Fontaine, MC*, <strong>JB Pease*</strong>, A Steele, RM Waterhouse, DE Neafsey, IV Sharakhov, X Jiang,
-                      AB Hall, F Catteruccia, E Kakani, SN Mitchell, Y Wu, HA Smith, RR Love, MK Lawniczak, MA Slotman, SJ Emrich, MW Hahn, NJ Besansky. 2015. 
+          <div class="indented pubcite">Fontaine, MC*, <strong>Pease JB*</strong>, Steele A, Waterhouse RM, Neafsey DE, Sharakhov IV, Jiang X,
+                      Hall AB, Catteruccia F, Kakani E, Mitchell SN, Wu Y, Smith HA, Love RR, Lawniczak MK, Slotman MA, Emrich SJ, Hahn MW, Besansky NJ. 2015. 
           <em>Science</em> 347 (6217), 1258524.
           <br />doi: 
           <a href="http://dx.doi.org/10.1126/science.1258524" class="doilink">10.1126/science.1258524</a> &middot; PMID: 
@@ -172,7 +183,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             of climatic niche adaptation in wild tomatoes and demonstrates that some trait transitions between species could have
             involved few, large-effect genetic changes, allowing rapid responses to new environmental conditions.</span></a>
           </div>
-          <div class="indented pubcite">Muir CD, <strong>JB Pease</strong>, LC Moyle. 2014. 
+          <div class="indented pubcite">Muir CD, <strong>Pease JB</strong>, Moyle LC. 2014. 
           <em>Genetics</em> 198:1629&ndash;43.
           <br />doi: 
           <a href="http://dx.doi.org/10.1534/genetics.114.169276" class="doilink">10.1534/genetics.114.169276</a> &middot; PMID: 
@@ -195,7 +206,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             species phylogeny, especially in cases where a whole-genome phylogeny appears to be an unresolvable
             polytomy.</span></a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong> &amp; MW Hahn. 2013. 
+          <div class="indented pubcite"><strong>Pease JB</strong>, Hahn MW. 2013. 
           <em>Evolution</em> 67:2376&ndash;84.
           <br />doi: 
           <a href="http://dx.doi.org/10.1111/evo.12118" class="doilink">10.1111/evo.12118</a> &middot; PMID: 
@@ -224,7 +235,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             X—differ among the insect X and Z chromosomes. Our results provide evidence for both differences and nearly universal
             similarities in patterns of evolution among independently derived sex chromosomes.</span></a>
           </div>
-          <div class="indented pubcite"><strong>Pease JB</strong> &amp; MW Hahn. 2012. 
+          <div class="indented pubcite"><strong>Pease JB</strong>, Hahn MW. 2012. 
           <em>Molecular Biology &amp; Evolution</em> 29: 1645&ndash;53.
           <br />doi: 
           <a href="http://dx.doi.org/10.1093/molbev/mss010" class="doilink">10.1093/molbev/mss010</a> &middot; PMID: 
@@ -245,7 +256,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             further work is needed to distinguish among these hypotheses. Regardless of the root causes, we have identified an
             additional, potentially inherent, difference between XX/XY and ZZ/ZW systems.</span></a>
           </div>
-          <div class="indented pubcite">Toups MA, <strong>JB Pease</strong>, MW Hahn. 2011. 
+          <div class="indented pubcite">Toups MA, <strong>Pease JB</strong>, Hahn MW. 2011. 
           <em>Genome Biology &amp; Evolution</em> 3:1381&ndash;90.
           <br />doi: 
           <a href="http://dx.doi.org/10.1093/gbe/evr109" class="doilink">10.1093/gbe/evr109</a> &middot; PMID: 
@@ -264,7 +275,7 @@ var juyvepk = ['@','.','p','e','a','a','i','i','=','c','e','"',':','l','f','m','
             may prove useful for bridging evolutionary biology and biomedicine, especially the evolution of antibiotic resistance
             in bacteria, immune evasion by influenza, and malaria parasite infections.</span></a>
           </div>
-          <div class="indented pubcite">Ogbunugafor CB, <strong>JB Pease</strong>, PE Turner. 2010. 
+          <div class="indented pubcite">Ogbunugafor CB, <strong>Pease JB</strong>, Turner PE. 2010. 
           <em>Chaos</em> 20(2):026108.
           <br />doi: 
           <a href="http://dx.doi.org/10.1063/1.3455189" class="doilink">10.1063/1.3455189</a> &middot; PMID: 
