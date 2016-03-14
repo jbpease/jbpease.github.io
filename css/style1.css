@@ -1,0 +1,242 @@
+html {
+     overflow: -moz-scrollbars-vertical;
+     overflow: scroll;
+}
+
+body{
+background: #000419;
+}
+
+.container{
+    background: #fcfcff;
+    border-left:10px solid #fcfcff;
+    border-right: 10px solid #fcfcff;
+}
+
+a {
+   /*color: rgb(148, 116, 46);*/ /* Yellow */ 
+   color: rgb(4, 25, 72); /* Blue */
+   text-decoration:none;
+   border-bottom: 1px dotted;
+    }
+
+a img {border: 1px solid rgba(255,255,255,0);}
+
+
+a img:hover{
+    /*color:rgb(158, 126, 56); /* Yellow */ 
+    border: 1px solid rgb(43, 71, 137);
+}
+
+a:hover{
+    /*color:rgb(158, 126, 56); /* Yellow */ 
+    color: rgb(43, 71, 137); /* Blue */
+    border-bottom: 1px solid;
+}
+    
+.left {
+    text-align:left;
+}
+    
+.center {
+    text-align:center;
+}
+
+#main-menu {
+    background: #f6f6f6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* Standard syntax */
+    padding-bottom:30px;
+    font-family: "Raleway", "Open Sans", Arial, san-serif;
+    margin-left:-10px;
+    margin-bottom:20px;
+    width:960px;
+    
+   
+}
+
+#footer {
+    background: #f6f6f6; /* For browsers that do not support gradients */
+    /* background: -webkit-linear-gradient(white, rgb(248, 216, 146)); */ /* For Safari 5.1 to 6.0 */
+    /* background: -o-linear-gradient(white, rgb(248, 216, 146)); */ /* For Opera 11.1 to 12.0 */
+    /* background: -moz-linear-gradient(white, rgb(248, 216, 146)); */ /* For Firefox 3.6 to 15 */
+    /* background: linear-gradient(white, rgb(248, 216, 146)); */ /* Standard syntax */
+    background: -webkit-linear-gradient(rgba(255,255,255,0), rgb(1196, 214, 255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,0), rgb(196, 214, 255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,0) rgb(196, 214, 255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,0), rgb(196, 214, 255)); /* Standard syntax */
+    height:50px;
+    bottom:0;
+    text-align:center;
+    font-size: 0.85em;
+    padding-top:20px;
+    margin-left:-10px;
+    width:960px;
+    
+}
+#footer:after {
+    content:"University of Michigan, Department of Ecology and Evolutionary Biology, 830 N University, Ann Arbor, MI 48109"
+    
+}
+
+
+ul.horiz-menu {
+    text-align: center;
+    width:100%;
+    margin-top:10px;
+    margin-bottom: 0px;
+    
+}
+ul.horiz-menu li {
+    display: block;
+    list-style-type:none;
+    margin: 0 18pt;
+    font-size: 1.5em;
+    position: relative;
+}
+ul.horiz-menu li a{
+    color: #222; 
+    text-decoration:none;
+    border-bottom: none;
+    
+}
+
+ul.horiz-menu li {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+
+ul.horiz-menu li:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  /* background: rgb(158, 126, 56);*/
+  background: rgb(43, 71, 137);
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+ul.horiz-menu li:hover:before, .ul.horiz-menu li:focus:before, ul.horiz-menu li:active:before, ul.horiz-menu li.selected:before {
+  left: 0;
+  right: 0;
+}
+
+    
+ul.publist{
+    list-style-type: none;
+    text-align:left;
+}
+
+
+ul.publist li{
+    display:block;
+}
+
+ul.publist li.pubyear {
+    font-size: 14pt;
+    font-weight: bold;
+    text-indent: -20px;
+}
+
+ul.publist li pubtitle a {
+    border:none;
+    font-weight:bold;
+    }
+    
+ul.publist li pubcite {
+    display:block;
+    font-size:10pt;
+    }
+
+ul.publist li ul.publink{
+    font-size:10pt;
+    list-style-type:none;
+    list-style-image:"|";
+    display: block;
+    margin:0;
+    padding:0;
+}
+
+ul.publist li ul.publink li{
+    display: inline-block;
+}
+  
+ul.publist li ul.publink li::after{
+  content: "|";
+  padding-left: 5px; 
+  padding-right: 5px;
+  }
+
+ul.publist li ul.publink li:last-child::after {
+    content: " ";
+}
+
+ul.soft-list {
+    font-size: 12pt;
+    list-style:none;
+    font-weight:bold;
+}
+
+ul.soft-list p{
+    font-size: 11pt;
+    display:block;
+    font-weight:normal;
+}
+
+ul.res-list {
+    font-size: 12pt;
+    list-style:none;
+    
+}
+
+ul.res-list li {
+    display:inline-block;
+}
+
+ul.res-list li::after{
+  content: "|";
+  padding-left: 5px; 
+  padding-right: 5px;
+  font-weight: normal;
+  }
+
+ul.res-list li:last-child::after {
+    content: " ";
+}
+
+img.fit {
+    width: 90%;
+}
+
+ul.news-list {
+    border-left: 1px dotted #222;
+    list-style:none;
+}
+
+ul.news-list li p.date{
+    font-size: 12pt;
+    font-weight:bold;
+    margin-bottom:0;
+}
+
+
+ul.news-list li p.date:before, ul.news-list li p.date:after{
+    content: " * "
+}
