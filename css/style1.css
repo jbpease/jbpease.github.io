@@ -4,11 +4,17 @@ html {
 }
 
 body{
-background: #000419;
+    background: #f6f6f6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* Standard syntax */
+    min-height:600px;
+/*background: #000419;*/
 }
 
 .container{
-    background: #fcfcff;
+
     padding-left:10px;
     padding-right:10px;
 }
@@ -56,15 +62,11 @@ a:hover{
 }
 
 #footer {
-    background: #f6f6f6; /* For browsers that do not support gradients */
+    /*background: #f6f6f6;*/ /* For browsers that do not support gradients */
     /* background: -webkit-linear-gradient(white, rgb(248, 216, 146)); */ /* For Safari 5.1 to 6.0 */
     /* background: -o-linear-gradient(white, rgb(248, 216, 146)); */ /* For Opera 11.1 to 12.0 */
     /* background: -moz-linear-gradient(white, rgb(248, 216, 146)); */ /* For Firefox 3.6 to 15 */
     /* background: linear-gradient(white, rgb(248, 216, 146)); */ /* Standard syntax */
-    background: -webkit-linear-gradient(rgba(255,255,255,0), rgb(1196, 214, 255)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(255,255,255,0), rgb(196, 214, 255)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(255,255,255,0) rgb(196, 214, 255)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(255,255,255,0), rgb(196, 214, 255)); /* Standard syntax */
     height:50px;
     bottom:0;
     text-align:center;
@@ -226,7 +228,6 @@ img.fit {
 }
 
 ul.news-list {
-    border-left: 1px dotted #222;
     list-style:none;
 }
 
@@ -234,6 +235,7 @@ ul.news-list li p.date{
     font-size: 12pt;
     font-weight:bold;
     margin-bottom:0;
+    
 }
 
 
