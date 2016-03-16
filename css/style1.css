@@ -9,8 +9,10 @@ body{
     background: -o-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* Standard syntax */
-    min-height:600px;
-/*background: #000419;*/
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background: #000419;*/
 }
 
 .container{
@@ -54,6 +56,7 @@ a:hover{
     background: -o-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* Standard syntax */
+    background-repeat: no-repeat; 
     padding-bottom:30px;
     font-family: "Raleway", "Open Sans", Arial, san-serif;  
 
@@ -87,12 +90,20 @@ ul.horiz-menu {
     margin-bottom: 0px;
     
 }
+
 ul.horiz-menu li {
     display: block;
     list-style-type:none;
     margin: 0 18pt;
-    font-size: 1.5em;
+    font-size: 1.1em;
     position: relative;
+}
+
+ul.horiz-menu li.name {
+    font-size: 2.7em;
+    font-variant: small-caps; 
+
+
 }
 ul.horiz-menu li a{
     color: #222; 
@@ -235,10 +246,17 @@ ul.news-list li p.date{
     font-size: 12pt;
     font-weight:bold;
     margin-bottom:0;
-    
 }
 
+.newsbox {
+   border-left: 1px dotted;
+   padding-left: 5px;
+   text-align: center;
+}
+
+.newsbox h5 {
+}
 
 ul.news-list li p.date:before, ul.news-list li p.date:after{
-    content: " * "
+    content: " ~ "
 }
