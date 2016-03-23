@@ -38,7 +38,7 @@ a img:hover{
 
 a:hover{
     /*color:rgb(158, 126, 56); /* Yellow */ 
-    color: rgb(43, 71, 137); /* Blue */
+    /*color: rgb(43, 71, 137); /* Blue */
     border-bottom: 1px solid;
 }
     
@@ -51,17 +51,10 @@ a:hover{
 }
 
 #main-menu {
-    background: #f6f6f6; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(196, 214, 255), rgba(255,255,255,0)); /* Standard syntax */
-    background-repeat: no-repeat; 
-    padding-bottom:30px;
-    font-family: "Raleway", "Open Sans", Arial, san-serif;  
 
-    
-   
+    padding-top: 20px;
+    padding-bottom:30px;
+    font-family:  "Bebas Neue", "Raleway", "Open Sans", Arial, san-serif;
 }
 
 #footer {
@@ -73,8 +66,9 @@ a:hover{
     height:50px;
     bottom:0;
     text-align:center;
-    font-size: 0.85em;
-    padding-top:20px;
+    font-size: 0.9em;
+    padding-top: 1em;
+    margin-bottom: 1rem;
     
 }
 #footer:after {
@@ -86,23 +80,23 @@ a:hover{
 ul.horiz-menu {
     text-align: center;
     width:100%;
-    margin-top:10px;
+    margin-top:0px;
     margin-bottom: 0px;
-    
 }
 
 ul.horiz-menu li {
     display: block;
     list-style-type:none;
-    margin: 0 18pt;
-    font-size: 1.1em;
+    margin: 0 12pt;
+    font-size: 2.3em;
+    font-weight: 500;
     position: relative;
 }
 
 ul.horiz-menu li.name {
-    font-size: 2.7em;
-    font-variant: small-caps; 
-
+    font-size: 3.7em;
+    font-weight: 900;
+    line-height: normal;
 
 }
 ul.horiz-menu li a{
