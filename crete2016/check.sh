@@ -1,0 +1,11 @@
+whereis blastn
+whereis blastx
+whereis blastp
+whereis mafft
+whereis makeblastdb
+whereis mcl
+whereis swipe
+whereis raxml*
+whereis tblastn
+whereis tblastx
+whereis figtree
